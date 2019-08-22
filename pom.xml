@@ -86,70 +86,77 @@
         <maven.plugin.annotations.version>RELEASE</maven.plugin.annotations.version>
     </properties>
 
-    <dependencies>
-        <!--  module dependency   -->
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-common</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-config</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-dao</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-domain</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-facade</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-integration</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-service</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yincheng</groupId>
-            <artifactId>newjoyread-framework-web</artifactId>
-            <version>${com.yincheng.newjoyread.version}</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
     <!-- general rely on management -->
     <dependencyManagement>
         <dependencies>
+            <!--  module dependency   -->
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-common</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-config</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-dao</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-domain</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-facade</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-integration</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-service</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yincheng</groupId>
+                <artifactId>newjoyread-framework-web</artifactId>
+                <version>${com.yincheng.newjoyread.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${springcloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
